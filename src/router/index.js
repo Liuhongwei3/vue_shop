@@ -21,6 +21,8 @@ const routes = [
     children: [
       {path: '/welcome', component: () => import(/* webpackChunkName: "welcome" */ '../views/Welcome')},
       {path: '/users', component: () => import(/* webpackChunkName: "users" */ '../components/user/Users')},
+      {path: '/rights', component: () => import(/* webpackChunkName: "rights" */ '../components/authority/Rights')},
+      {path: '/roles', component: () => import(/* webpackChunkName: "rights" */ '../components/authority/Roles')},
     ]
   }
 ];
