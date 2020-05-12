@@ -317,8 +317,7 @@
           this.$message.success('更新用户角色成功~');
           this.getUserList();
         } else {
-          console.log(resData);
-          this.$message.error('更新用户角色失败！');
+          this.$message.error(resData.meta.msg || '更新用户角色失败！');
         }
         this.setRoleDialogVisible = false
       },

@@ -22,7 +22,8 @@ const routes = [
       {path: '/welcome', component: () => import(/* webpackChunkName: "welcome" */ '../views/Welcome')},
       {path: '/users', component: () => import(/* webpackChunkName: "users" */ '../components/user/Users')},
       {path: '/rights', component: () => import(/* webpackChunkName: "rights" */ '../components/authority/Rights')},
-      {path: '/roles', component: () => import(/* webpackChunkName: "rights" */ '../components/authority/Roles')},
+      {path: '/roles', component: () => import(/* webpackChunkName: "roles" */ '../components/authority/Roles')},
+      {path: '/categories', component: () => import(/* webpackChunkName: "categories" */ '../components/goods/Category')},
     ]
   }
 ];
