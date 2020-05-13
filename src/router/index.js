@@ -24,6 +24,7 @@ const routes = [
       {path: '/rights', component: () => import(/* webpackChunkName: "rights" */ '../components/authority/Rights')},
       {path: '/roles', component: () => import(/* webpackChunkName: "roles" */ '../components/authority/Roles')},
       {path: '/categories', component: () => import(/* webpackChunkName: "categories" */ '../components/goods/Category')},
+      {path: '/params', component: () => import(/* webpackChunkName: "params" */ '../components/goods/Params')},
     ]
   }
 ];

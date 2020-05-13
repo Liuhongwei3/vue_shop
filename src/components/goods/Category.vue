@@ -247,7 +247,6 @@
             this.getCategoryList();
           } else {
             this.$message.error('删除失败！请稍后重新尝试此操作！');
-            this.getCategoryList();
           }
         }).catch(() => {
           this.$message.error('已取消删除~')
