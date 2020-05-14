@@ -13,3 +13,11 @@ html, body, #app {
   margin-top: 15px;
   text-align: right;
 }
+
+.el-steps{
+  margin: 15px auto;
+}
+
+.ql-editor{
+  height: 100px;
+}

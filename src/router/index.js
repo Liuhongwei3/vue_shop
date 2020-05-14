@@ -25,6 +25,8 @@ const routes = [
       {path: '/roles', component: () => import(/* webpackChunkName: "roles" */ '../components/authority/Roles')},
       {path: '/categories', component: () => import(/* webpackChunkName: "categories" */ '../components/goods/Category')},
       {path: '/params', component: () => import(/* webpackChunkName: "params" */ '../components/goods/Params')},
+      {path: '/goods', component: () => import(/* webpackChunkName: "goods" */ '../components/goods/GoodsList')},
+      {path: '/goods/add', component: () => import(/* webpackChunkName: "goodsAdd" */ '../components/goods/GoodsAdd')},
     ]
   }
 ];

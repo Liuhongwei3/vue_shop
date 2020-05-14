@@ -206,6 +206,7 @@
           params: this.queryInfo
         });
         if (resData.meta.status === 200) {
+          this.$message.success('获取用户列表数据成功~');
           this.userList = resData.data.users;
           this.total = resData.data.total;
         } else {
