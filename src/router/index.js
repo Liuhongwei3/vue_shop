@@ -28,7 +28,7 @@ const routes = [
       {path: '/goods', component: () => import(/* webpackChunkName: "second" */ '../components/goods/GoodsList')},
       {path: '/goods/add', component: () => import(/* webpackChunkName: "second" */ '../components/goods/GoodsAdd')},
       {path: '/orders', component: () => import(/* webpackChunkName: "second" */ '../components/order/Order')},
-      {path: '/reports', component: () => import(/* webpackChunkName: "second" */ '../components/report/Report')},
+      {path: '/reports', component: () => import(/* webpackChunkName: "first" */ '../components/report/Report')},
     ]
   }
 ];

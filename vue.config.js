@@ -6,15 +6,18 @@
  */
 
 module.exports = {
-  // configureWebpack: {
-    // externals:{
-    //   vue: 'vue',
-    //   'vue-router': 'VueRouter',
-    //   axios: 'axios',
-    //   lodash: '_',
-    //   echarts: 'echarts',
-    //   nprogress: 'NProgress',
-    //   'vue-quill-editor': 'VueQuillEditor'
-    // }
-  // }
+  productionSourceMap: false,
+  publicPath: './',
+  configureWebpack: {
+    externals: {
+      vue: 'Vue',
+      'vue-router': 'VueRouter',
+      'element-ui': 'ELEMENT',
+      axios: 'axios',
+      lodash: '_',
+      echarts: 'echarts',
+      nprogress: 'NProgress',
+      'vue-quill-editor': 'VueQuillEditor',
+    }
+  }
 };
