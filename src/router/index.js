@@ -11,24 +11,24 @@ const routes = [
   {
     path: '/login',
     name: 'Login',
-    component: () => import(/* webpackChunkName: "login" */ '../views/Login'),
+    component: () => import(/* webpackChunkName: "first" */ '../views/Login'),
   },
   {
     path: '/home',
     name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home'),
+    component: () => import(/* webpackChunkName: "first" */ '../views/Home'),
     redirect: '/welcome',
     children: [
-      {path: '/welcome', component: () => import(/* webpackChunkName: "welcome" */ '../views/Welcome')},
-      {path: '/users', component: () => import(/* webpackChunkName: "users" */ '../components/user/Users')},
-      {path: '/rights', component: () => import(/* webpackChunkName: "rights" */ '../components/authority/Rights')},
-      {path: '/roles', component: () => import(/* webpackChunkName: "roles" */ '../components/authority/Roles')},
-      {path: '/categories', component: () => import(/* webpackChunkName: "categories" */ '../components/goods/Category')},
-      {path: '/params', component: () => import(/* webpackChunkName: "params" */ '../components/goods/Params')},
-      {path: '/goods', component: () => import(/* webpackChunkName: "goods" */ '../components/goods/GoodsList')},
-      {path: '/goods/add', component: () => import(/* webpackChunkName: "goodsAdd" */ '../components/goods/GoodsAdd')},
-      {path: '/orders', component: () => import(/* webpackChunkName: "goodsAdd" */ '../components/order/Order')},
-      {path: '/reports', component: () => import(/* webpackChunkName: "goodsAdd" */ '../components/report/Report')},
+      {path: '/welcome', component: () => import(/* webpackChunkName: "first" */ '../views/Welcome')},
+      {path: '/users', component: () => import(/* webpackChunkName: "first" */ '../components/user/Users')},
+      {path: '/rights', component: () => import(/* webpackChunkName: "first" */ '../components/authority/Rights')},
+      {path: '/roles', component: () => import(/* webpackChunkName: "first" */ '../components/authority/Roles')},
+      {path: '/categories', component: () => import(/* webpackChunkName: "second" */ '../components/goods/Category')},
+      {path: '/params', component: () => import(/* webpackChunkName: "second" */ '../components/goods/Params')},
+      {path: '/goods', component: () => import(/* webpackChunkName: "second" */ '../components/goods/GoodsList')},
+      {path: '/goods/add', component: () => import(/* webpackChunkName: "second" */ '../components/goods/GoodsAdd')},
+      {path: '/orders', component: () => import(/* webpackChunkName: "second" */ '../components/order/Order')},
+      {path: '/reports', component: () => import(/* webpackChunkName: "second" */ '../components/report/Report')},
     ]
   }
 ];
