@@ -27,6 +27,7 @@ const routes = [
       {path: '/params', component: () => import(/* webpackChunkName: "params" */ '../components/goods/Params')},
       {path: '/goods', component: () => import(/* webpackChunkName: "goods" */ '../components/goods/GoodsList')},
       {path: '/goods/add', component: () => import(/* webpackChunkName: "goodsAdd" */ '../components/goods/GoodsAdd')},
+      {path: '/orders', component: () => import(/* webpackChunkName: "goodsAdd" */ '../components/order/Order')},
     ]
   }
 ];
